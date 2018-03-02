@@ -1,0 +1,32 @@
+{
+  "name": "parcel-bootstrap-test",
+  "version": "1.0.0",
+  "description": "Testing to see what break my Parcel.JS Bootstrap production build",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel ./index.html",
+    "build": "parcel build ./index.html --public-url ./",
+    "hard-build": "parcel build ./index.html --public-url ./ --no-cache"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devNoiseConsulting/parcel-bootstrap-test.git"
+  },
+  "keywords": [],
+  "author": "Michael J. Flynn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/devNoiseConsulting/parcel-bootstrap-test/issues"
+  },
+  "homepage": "https://github.com/devNoiseConsulting/parcel-bootstrap-test#readme",
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "parcel-bundler": "^1.6.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9"
+  }
+}

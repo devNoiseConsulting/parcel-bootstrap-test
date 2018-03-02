@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Parcel Bootstrap Test</title>
+  <!--build:css css/main.css -->
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css" />
+  <!-- <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css" /> -->
+  <!-- endbuild -->
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Parcel Bootstrap Test</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="nav navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" id="home" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="nearme" href="#">Near Me</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filters</a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item" id="all">All</li>
+            <li class="dropdown-item" id="visit">To Visit</li>
+            <li class="dropdown-item" id="visited">Visited</li>
+            <li class="dropdown-item" id="visiting">Visiting Soon</li>
+            <li class="dropdown-divider"></li>
+            <li class="dropdown-item" id="remove">Remove</li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/devNoiseConsulting/myGeoBeerMap">GitHub Repo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/devNoiseConsulting/geoBeer">geoBeer Repo</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container py-3">
+    <div class="row clearfix">
+      <div class="col-12 col-lg-6 pb-3">
+        <form class="brewery-search form-inline">
+          <div class="input-group">
+            <input class="form-control" id="search" name="brewery" type="text" />
+            <span class="input-group-btn">
+                            <button type="button" class="btn btn-primary" id="filter">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer bg-faded">
+    <div class="container">
+      <span class="text-muted small">Michael J. Flynn</span>
+    </div>
+  </footer>
+
+  <!--build:js js/main.min.js -->
+  <script src="./node_modules/jquery/dist/jquery.slim.js"></script>
+  <script src="./node_modules/popper.js/dist/popper.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <!-- endbuild -->
+</body>
+
+</html>
